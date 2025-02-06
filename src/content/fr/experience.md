@@ -3,7 +3,7 @@ username: "kamelelmazroui"
 title: "~/home/expériences"
 ---
 
-# cat EXPERIENCIA.md
+# cat EXPÉRIENCES.md
 
 [**Ingénieur logiciel Full Stack** a Sopra Steria (Décembre 2023 - Octobre 2024)](https://www.soprasteria.com/)\
 Participation à la refonte complète d’une application de facturation legacy afin d’améliorer sa maintenabilité, ses performances et son évolutivité. Cette mission a impliqué la conception et le développement de nouvelles fonctionnalités aussi bien sur la partie back-end que front-end, en adoptant une approche axée sur les bonnes pratiques du développement logiciel.
