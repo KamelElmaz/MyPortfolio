@@ -1,0 +1,54 @@
+---
+import { getLangFromUrl, useTranslations, useTranslatedPath } from "../i18n/utils";
+
+import Github from "@/assets/Github.astro";
+import Settings from "@/components/Settings.astro";
+import LanguageSwitch from "@/components/LanguageSwitch.astro";
+import Credits from "@/components/Credits.astro";
+
+const pathname = new URL(Astro.request.url).pathname;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const routes = [
+    { path: translatePath("/"), label: t("nav.home") },
+    { path: translatePath("/experience/"), label: t("nav.experience") },
+    { path: translatePath("/projects/"), label: t("nav.projects") },
+    { path: translatePath("/contact/"), label: t("nav.contact") },
+];
+
+const isActive = (routePath: string) => {
+    return pathname === routePath || pathname === `/fr${routePath}`;
+};
+---
+
+<nav class="flex justify-between overflow-auto text-white border-b border-b-gray-800">
+    <ul class="flex items-center">
+        <div class="px-4">
+            <Credits />
+        </div>
+        {
+            routes.map(({ path, label }) => (
+                <a
+                    href={path}
+                    class={isActive(path) ? "warp-tab active" : "warp-tab"}
+                >
+                    {label}
+                </a>
+            ))
+        }
+    </ul>
+    <div class="flex items-center gap-4 px-4">
+        <LanguageSwitch />
+        <a
+            href="https://github.com/KamelElmaz/MyPortfolio"
+            target="_blank"
+            aria-label="Github Repository"
+            class="hover:scale-110"
+        >
+            <Github />
+        </a>
+        <Settings />
+    </div>
+</nav>

@@ -1,0 +1,41 @@
+---
+import Header from "@/components/Header.astro";
+const { username, title } = Astro.props;
+const executionTime = (Math.random() * (0.5 - 0.001) + 0.001).toFixed(3);
+---
+
+<script>
+    document.addEventListener("click", (e) => {
+        const firstSection = document.querySelector("section:first-of-type");
+        if (!firstSection) return;
+
+        const isClickInside = firstSection.contains(e.target as Node);
+        firstSection.classList.toggle("selected-section", isClickInside);
+    });
+</script>
+
+<main class="flex flex-col justify-between h-full">
+    <Header />
+    <article>
+        <section class="transition-colors prompt-section animate-slide-in border-t border-t-gray-800">
+            <div class="flex gap-2 text-gray-400">
+                <p>{username}</p>
+                <span>{title} ({executionTime}s)</span>
+            </div>
+            <div class="leading-relaxed text-white markdown">
+                <slot />
+            </div>
+        </section>
+
+        <section class="prompt-section border-t border-t-gray-800">
+            <div class="flex gap-2 font-semibold">
+                <p class="warp-username">{username}</p>
+                <h2 class="warp-directory">{title}</h2>
+            </div>
+            <p class="text-gray-600">
+                <span class="border-l-2 animate-blink"></span>
+                Try visiting other tabs instead of a command
+            </p>
+        </section>
+    </article>
+</main>
