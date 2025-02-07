@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: dist/MyPortfolio
+          path: dist
   
   deploy:
     environment:
@@ -53,7 +53,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: dist/MyPortfolio
+          path: dist
       
       - name: Deploy to GitHub Pages
         id: deployment
