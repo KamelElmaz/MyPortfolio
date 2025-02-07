@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   outDir: "dist",
   site: 'https://kamelelmaz.github.io',
-  base: '/MyPortfolio',
+  base: '/MyPortfolio/',
   i18n: {
     locales: ["en", "fr"],
     defaultLocale: "en"
