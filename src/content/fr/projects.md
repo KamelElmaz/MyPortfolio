@@ -1,25 +1,19 @@
 ---
-username: "marcosklender"
-title: "~/home/projects"
+username: "kamelelmazroui"
+title: "~/home/projets"
 ---
 
-# cat PROYECTOS.md
+# cat PROJETS.md
 
-[**AstroLinkHub**](https://astrolinkhub.netlify.app)\
-Página de enlaces de código abierto, personalizable a través de JSON.
+[**MyPortfolio**](https://github.com/KamelElmaz/MyPortfolio)\
+Le code de mon protfolio.
 
-[**Night.css**](https://marcosklender.github.io/night.css)\
-¡Un framework sin clases para un modo oscuro perfecto!
+[**Classy Admin Back-End**](https://github.com/KamelElmaz/ClassyAdmin_API)\
+Le Back-End d'un système pour gérer les étudiants, les enseignants, les salles et les cours.
 
-[**SteamReviews**](https://steamreview.netlify.app)\
-Creador de reseñas para Steam. ¡Disponible también en español!
+[**Java exercices**](https://github.com/KamelElmaz/JavaExercices)\
+Quleques exercices en Java.
 
-[**ITManager**](https://github.com/MarcosKlender/ITManager)\
-Aplicación web moderna para la gestión y seguimiento de equipos, utilizando el Stack TALL.
-
-[**RegistroMJRV**](https://github.com/MarcosKlender/RegistroMJRV)\
-Aplicación Laravel para gestionar el registro de miembros para las Elecciones de Ecuador 2024.
-
-[**Larapark**](https://github.com/MarcosKlender/Larapark)\
-Gestiona tu estacionamiento de la manera más eficiente, totalmente gratis.
+[**MMO Design Paterns**](https://github.com/KamelElmaz/TP-MMO)\
+Un jeu MMO, qui contient cinq design patterns.
 
