@@ -5,8 +5,6 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://kamelelmaz.github.io',
-  base: '/MyPortfolio',
   i18n: {
     locales: ["en", "fr"],
     defaultLocale: "en"
