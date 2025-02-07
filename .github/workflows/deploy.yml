@@ -31,7 +31,7 @@ jobs:
         run: pnpm install
       
       - name: Build the project
-        run: pnpm run build
+        run: pnpm astro build --site=https://kamelelmaz.github.io --base=/MyPortfolio/
 
       - name: List build output
         run: ls -R dist
