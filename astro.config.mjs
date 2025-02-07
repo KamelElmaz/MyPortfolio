@@ -4,7 +4,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  outDir: "dist",
+  outDir: "dist/MyPortfolio",
   site: 'https://kamelelmaz.github.io',
   base: '/MyPortfolio/',
   i18n: {
