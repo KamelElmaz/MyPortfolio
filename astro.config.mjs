@@ -1,6 +1,8 @@
+// @ts-check
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
+// https://astro.build/config
 export default defineConfig({
   outDir: "dist",
   site: 'https://kamelelmaz.github.io',
@@ -9,10 +11,5 @@ export default defineConfig({
     locales: ["en", "fr"],
     defaultLocale: "en"
   },
-  integrations: [tailwind()],
-  vite: {
-    build: {
-      outDir: "dist/MyPortfolio"
-    }
-  }
+  integrations: [tailwind()]
 });
